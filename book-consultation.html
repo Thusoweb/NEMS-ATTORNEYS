@@ -13,7 +13,10 @@
 <body>
     <header id="header" class="header">
         <nav class="navbar container">
-            <a href="index.html" class="nav-logo"><img src="assets/images/Logo.png" alt="Nemukula Attorneys Inc. Logo"></a>
+            <a href="index.html" class="nav-logo">
+                <img src="assets/Logo.png" alt="Nemukula Attorneys Inc. Logo">
+                <span class="logo-text">Nemukula Attorneys Inc</span>
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                 <li class="nav-item"><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
@@ -53,7 +56,8 @@
                                 <input type="tel" name="phone" placeholder="Phone Number" required>
                             </div>
                             <div class="form-group">
-                                <select name="practiceArea" required>
+                                <label for="practiceArea">Practice Area</label>
+                                <select name="practiceArea" id="practiceArea" required title="Select a practice area">
                                     <option value="">Select Practice Area</option>
                                     <option value="corporate">Corporate & Commercial Law</option>
                                     <option value="family">Family Law</option>
@@ -65,10 +69,12 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="date" name="preferredDate" required>
+                                <label for="preferredDate">Preferred Date</label>
+                                <input type="date" name="preferredDate" id="preferredDate" required title="Choose your preferred date">
                             </div>
                             <div class="form-group">
-                                <select name="preferredTime" required>
+                                <label for="preferredTime">Preferred Time</label>
+                                <select name="preferredTime" id="preferredTime" required title="Select your preferred time">
                                     <option value="">Preferred Time</option>
                                     <option value="morning">Morning (9:00 - 12:00)</option>
                                     <option value="afternoon">Afternoon (12:00 - 3:00)</option>

@@ -14,7 +14,10 @@
 
     <header id="header" class="header">
         <nav class="navbar container">
-            <a href="index.html" class="nav-logo"><img src="assets/images/Logo.png" alt="Nemukula Attorneys Inc. Logo"></a>
+            <a href="index.html" class="nav-logo">
+                <img src="assets/Logo.png" alt="Nemukula Attorneys Inc. Logo">
+                <span class="logo-text">Nemukula Attorneys Inc</span>
+            </a>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                 <li class="nav-item"><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
@@ -35,6 +38,7 @@
             <div class="hero-content" data-aos="fade-in" data-aos-delay="300">
                 <h1 class="hero-title">Justice, Integrity, Excellence</h1>
                 <p class="hero-subtitle">Your trusted legal partners, dedicated to achieving the best possible outcomes.</p>
+                <p class="slogan">The Best For Your Rights</p>
                 <a href="#contact" class="btn btn-primary">Request a Consultation</a>
             </div>
         </section>
@@ -42,7 +46,7 @@
         <section id="about" class="content-section">
             <div class="container" data-aos="fade-up">
                 <h2>About Our Firm</h2>
-                <p class="section-intro">Founded on the principles of unwavering dedication and legal expertise, Nemukula Attorneys Inc. provides comprehensive legal services to individuals and businesses. We believe in building strong client relationships based on trust and transparency, ensuring you are guided and supported through every step of the legal process.</p>
+                <p class="section-intro">Founded on the principles of unwavering dedication and legal excellence, Nemukula Attorneys Inc. provides comprehensive legal services to individuals and businesses. We believe in building strong client relationships based on trust and transparency, ensuring you are guided and supported through every step of the legal process.</p>
             </div>
         </section>
 
@@ -53,7 +57,7 @@
                     <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-icon"><i data-feather="briefcase"></i></div>
                         <h3>Corporate Law</h3>
-                        <p>Expert legal counsel for business formation, contract negotiation, mergers, and acquisitions.</p>
+                        <p>Comprehensive legal counsel for business formation, contract negotiation, mergers, and acquisitions.</p>
                     </div>
                     <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-icon"><i data-feather="heart"></i></div>
@@ -89,19 +93,9 @@
                 <h2>Meet Our Team</h2>
                  <div class="team-grid">
                     <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                        <img src="https://i.pravatar.cc/150?img=5" alt="Attorney Photo J. Nemukula">
-                        <h4>J. Nemukula</h4>
+                        <img src="assets/thuso.jpg" alt="Attorney Photo Thuso Nemukula">
+                        <h4>Thuso Nemukula</h4>
                         <p class="title">Managing Partner</p>
-                    </div>
-                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                        <img src="https://i.pravatar.cc/150?img=8" alt="Attorney Photo S. Patel">
-                        <h4>S. Patel</h4>
-                        <p class="title">Senior Associate</p>
-                    </div>
-                    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
-                        <img src="https://i.pravatar.cc/150?img=7" alt="Attorney Photo T. Williams">
-                        <h4>T. Williams</h4>
-                        <p class="title">Associate Attorney</p>
                     </div>
                 </div>
             </div>
@@ -146,5 +140,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="js/script.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init();
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
 </body>
 </html>
