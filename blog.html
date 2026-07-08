@@ -9,6 +9,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(212, 175, 55, 0.2);
+        }
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+        .blog-card h3 {
+            font-family: 'Lora', serif;
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+        .blog-card-excerpt {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .blog-card-meta {
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 1rem;
+        }
+        .read-more-btn {
+            display: inline-block;
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .read-more-btn:hover {
+            color: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
     <header id="header" class="header">
@@ -37,7 +86,20 @@
         <section class="page-header">
             <div class="container">
                 <h1>Legal Insights Blog</h1>
-                <p>Coming Soon</p>
+                <p>Explore our latest articles on constitutional law, family law, and legal developments</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up">
+                    <div class="blog-card-content">
+                        <h3>Dismantling Marital Patriarchy: A Legal Analysis of Jordaan and Others v Minister of Home Affairs</h3>
+                        <div class="blog-card-meta">Matrimonial Law | Constitutional Law</div>
+                        <p class="blog-card-excerpt">The Constitutional Court of South Africa delivered a landmark judgment that significantly alters the matrimonial and family law landscape by addressing gender discrimination in surname administration under the Births and Deaths Registration Act...</p>
+                        <a href="blog-jordaan-marital-patriarchy.html" class="read-more-btn">Read More →</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
